@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DoCome</string>
+    <string name="menu_settings">Settings</string>
+    <string name="feedbacktitle">DoCome</string>
+    <string name="feedbackname">DoCome</string>
 </resources>

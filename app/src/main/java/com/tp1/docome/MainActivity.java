@@ -1,17 +1,19 @@
 package com.tp1.docome;
 
+
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 
 
+
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
+
 
 
     @Override
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-             googleMap.setMyLocationEnabled(true);
+            googleMap.setMyLocationEnabled(true);
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -43,4 +45,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
 
+    private class MyLocationOverlay {
+    }
 }
